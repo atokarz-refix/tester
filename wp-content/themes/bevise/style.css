@@ -1,0 +1,302 @@
+/*
+Theme Name: bevise
+Theme URI: #
+Author: Bevise Software House - Piotr Pac
+Version: 1.0
+License:  GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bevise
+*/
+
+
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.entry-content {
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.site-header {
+    margin: 0 auto;
+}
+
+.primary-navigation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-wrapper {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu-wrapper li a {
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+#masthead .sticky-wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+
+.custom-logo {
+    width: 210px;
+    height: auto;
+    padding-left: 5px;
+}
+
+.bv_mobile_header .custom-logo {
+    margin-top: 10px;
+}
+
+.sticky-wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    box-shadow: 0 0 5px;
+}
+
+#bv_page_title {
+    padding: 15px 0;
+}
+
+/* ------------------------- */
+
+.entry-content.bv-fullwidth .wp-block-columns {
+    max-width: var(--contener-width);
+    margin: 0 auto;
+    padding: 0;
+}
+
+.entry-content.bv-fullwidth .wp-block-columns.alignfull,
+.entry-content.bv-fullwidth .wp-block-columns.alignwide {
+    max-width: 100%;
+}
+
+.entry-content.bv-fullwidth .wp-block-columns.alignfull .wp-block-column {
+    max-width: 100%;
+}
+
+.entry-content.bv-fullwidth .wp-block-columns.alignwide .wp-block-column {
+    max-width: var(--contener-width);
+    margin: 0 auto;
+}
+
+
+/* ---------------------------------------- */
+
+@font-face {
+    font-family: Inter;
+    src: url(/wp-content/themes/bevise/assets/fonts/Inter-Light.ttf );
+    font-weight: 300;
+    /* font-display: swap; */
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/wp-content/themes/bevise/assets/fonts/Inter-Regular.ttf );
+    font-weight: normal;
+    /* font-display: swap; */
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/wp-content/themes/bevise/assets/fonts/Inter-Regular.ttf );
+    font-weight: 400;
+    /* font-display: swap; */
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/wp-content/themes/bevise/assets/fonts/Inter-Medium.ttf );
+    font-weight: 600;
+    /* font-display: swap; */
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/wp-content/themes/bevise/assets/fonts/Inter-Bold.ttf );
+    font-weight: 700;
+    /* font-display: swap; */
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/wp-content/themes/bevise/assets/fonts/Inter-Bold.ttf );
+    font-weight: bold;
+    /* font-display: swap; */
+}
+
+@font-face {
+    font-family: Oxygen;
+    src: url(/wp-content/themes/bevise/assets/fonts/Oxygen-Regular.ttf );
+    font-weight: normal;
+    /* font-display: swap; */
+}
+
+@font-face {
+    font-family: Oxygen;
+    src: url(/wp-content/themes/bevise/assets/fonts/Oxygen-Regular.ttf );
+    font-weight: 400;
+    /* font-display: swap; */
+}
+
+@font-face {
+    font-family: Oxygen;
+    src: url(/wp-content/themes/bevise/assets/fonts/Oxygen-Bold.ttf );
+    font-weight: bold;
+    /* font-display: swap; */
+}
+
+@font-face {
+    font-family: Oxygen;
+    src: url(/wp-content/themes/bevise/assets/fonts/Oxygen-Bold.ttf );
+    font-weight: 600;
+    /* font-display: swap; */
+}
+
+h1 {
+    font-family: "Oxygen";
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+h2 {
+    font-family: "Oxygen";
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0;
+    padding: 5px 0;
+}
+
+h3 {
+    font-family: "Oxygen";
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+    margin: 0;
+    padding: 5px 0;
+}
+
+h4 {
+    font-family: "Oxygen";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25px;
+    margin: 0;
+    padding: 5px 0;
+}
+
+h5 {
+    font-family: "Oxygen";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 0;
+    padding: 5px 0;
+}
+
+p {
+    font-family: var(--font-family-content);
+}
+
+#site-navigation .primary-menu-container a {
+    font-family: var(--font-family-heading);
+    color: var(--kolor-01);
+}
+
+#site-navigation .primary-menu-container a:hover,
+#site-navigation .primary-menu-container .current-menu-item a {
+    color: var(--kolor-02);
+}
+
+
+/* -------------- menu --------------- */
+
+#site-navigation.bv_mobile_header {
+    display: flex;
+    align-items: flex-start;
+}
+
+.primary-navigation.bv_mobile-menu {
+    display: flex;
+    align-items: flex-start;
+}
+
+.bv_mobile_header .header-right {
+    position: relative;
+}
+
+.bv_mobile_header .header-right #menu-opener::before {
+    content: url(/wp-content/themes/bevise/assets/menu-kreski.svg);
+    position: absolute;
+    right: 25px;
+    top: 33px;
+    cursor: pointer;
+}
+
+.bv_mobile_header .header-right #menu-opener.opener::before {
+    content: '\27A4';
+}
+
+.bv_mobile-menu {
+	display: block;
+	margin-top: 60px;
+	background: #f4f4f4;
+	padding-right: 50px;
+	position: absolute;
+	width: 240px;
+	right: -295px;
+    transition:0.3s;
+}
+
+.bv_mobile-menu.opener {
+    right:0;
+}
+
+.bv_mobile-menu ul {
+    flex-direction: column;
+    z-index: 50;
+    position: relative;
+}
+
+
+/* ----- footer ---- */
+
+.bevise_theme_footer_wrapper {
+    max-width: 100%;
+    width: var(--contener-width);
+    margin: 0 auto;
+}
+
+
+
